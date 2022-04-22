@@ -20,5 +20,10 @@ namespace LearnForeignWords.Tests
 
             return randomQuestion;
         }
+
+        internal static string evaluate(string question, string answer)
+        {
+            return "Correct";
+        }
     }
 }

@@ -34,4 +34,10 @@ public class TeacherTests
 
         Assert.NotEqual(first10Questions, second10Questions);
     }
+
+    [Fact]
+    public void TeacherEvaluatesTheAnswerAndSaysCorrect()
+    {
+        Assert.Equal("Correct", Teacher.evaluate("Question-1", "Answer-1"));
+    }
 }
