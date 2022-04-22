@@ -6,7 +6,7 @@ namespace LearnForeignWords.Tests
     {
         internal static string ask()
         {
-            return "";
+            return "Hello";
         }
     }
 }

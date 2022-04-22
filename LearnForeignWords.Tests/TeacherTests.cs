@@ -9,4 +9,10 @@ public class TeacherTests
     {
         Assert.IsType<string>(Teacher.ask());
     }
+
+    [Fact]
+    public void TeacherAsksNotNullOrEmptyQuestion()
+    {
+        Assert.NotEmpty(Teacher.ask());
+    }
 }
