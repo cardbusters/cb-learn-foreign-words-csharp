@@ -407,3 +407,6 @@ FodyWeavers.xsd
 
 # Visual Studio Folders
 .vs/
+
+# VS Code
+.vscode/
