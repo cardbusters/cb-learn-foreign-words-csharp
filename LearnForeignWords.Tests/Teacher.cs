@@ -18,7 +18,7 @@ namespace LearnForeignWords.Tests
 
         internal static string evaluate(string question, string answer)
         {
-            return "Correct";
+            return questions[question] == answer ? "Correct" : "Wrong";
         }
 
         internal static void get(Dictionary<string, string> questionare)

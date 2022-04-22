@@ -64,4 +64,10 @@ public class TeacherTests
         Assert.Equal("Correct", Teacher.evaluate("Question-1", "Answer-1"));
 
     }
+
+    [Fact]
+    public void TeacherEvaluatesTheAnswerAndSaysWrong()
+    {
+        Assert.Equal("Wrong", Teacher.evaluate("Question-1", "Answer-2"));
+    }
 }
