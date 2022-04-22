@@ -5,6 +5,17 @@ namespace LearnForeignWords.Tests;
 
 public class TeacherTests
 {
+    public TeacherTests()
+    {
+        Teacher.get(new Dictionary<string, string>(){
+            {"Question-1", "Answer-1"},
+            {"Question-2", "Answer-2"},
+            {"Question-3", "Answer-3"},
+            {"Question-4", "Answer-4"},
+            {"Question-5", "Answer-5"},
+        });
+    }
+
     [Fact]
     public void TeacherAsksQuestionThenResultShouldBeString()
     {
@@ -39,5 +50,18 @@ public class TeacherTests
     public void TeacherEvaluatesTheAnswerAndSaysCorrect()
     {
         Assert.Equal("Correct", Teacher.evaluate("Question-1", "Answer-1"));
+    }
+
+    [Fact]
+    public void TeacherGetsTheQuestionareAndAnswersToAsk()
+    {
+        var questionare = new Dictionary<string, string>(){
+            { "Question-1", "Answer-1" }
+        };
+        Teacher.get(questionare);
+        
+        Assert.Equal("Question-1", Teacher.ask());
+        Assert.Equal("Correct", Teacher.evaluate("Question-1", "Answer-1"));
+
     }
 }
