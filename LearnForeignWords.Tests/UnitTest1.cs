@@ -1,5 +1,4 @@
 ﻿using Xunit;
-using System;
 
 namespace LearnForeignWords.Tests;
 
@@ -26,15 +25,5 @@ public class UnitTest1
             }
         }
         Assert.True(toSleepCount > 0 && toSpeakCount > 0);
-    }
-}
-
-internal static class Teacher
-{    
-    internal static string ask()
-    {
-        string[] questionArray = new string[] {"to sleep", "to speak"};
-        int randomNumber = new Random().Next(questionArray.Length);
-        return questionArray[randomNumber];
     }
 }
