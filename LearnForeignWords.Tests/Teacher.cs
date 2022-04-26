@@ -2,9 +2,9 @@ using System;
 
 namespace LearnForeignWords.Tests;
 
-internal static class Teacher
+internal class Teacher
 {    
-    internal static string ask()
+    internal string ask()
     {
         string[] questionArray = new string[] {"to sleep", "to speak"};
         int randomNumber = new Random().Next(questionArray.Length);

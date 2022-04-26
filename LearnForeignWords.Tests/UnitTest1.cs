@@ -10,10 +10,11 @@ public class UnitTest1
         int     toSleepCount = 0;
         int     toSpeakCount = 0;
         string  teachersQuestion;
+        Teacher teacher = new Teacher();
 
         for (int i = 0; i < 10; i++) 
         {
-            teachersQuestion = Teacher.ask();
+            teachersQuestion = teacher.ask();
 
             if (teachersQuestion == "to sleep")
             {
