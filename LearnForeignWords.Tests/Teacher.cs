@@ -10,4 +10,9 @@ internal class Teacher
         int randomNumber = new Random().Next(questionArray.Length);
         return questionArray[randomNumber];
     }
+
+    internal void addWord(string v)
+    {
+        throw new NotImplementedException();
+    }
 }
